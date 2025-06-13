@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Código de Barras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Código de Barras</h1>
+        <form id="barcodeForm">
+            <label for="date">Data:</label>
+            <input type="date" id="dateInput" required>
+            
+            <label for="number">Número:</label>
+            <input type="number" id="numberInput" required>
+            
+            <button type="submit">Gerar Código de Barras</button>
+        </form>
+        
+        <div id="result" class="result">
+            <h2>Resultado:</h2>
+            <label id="barcodeText"></label>
+            <img id="barcodeImage" alt="Código de Barras" />
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
